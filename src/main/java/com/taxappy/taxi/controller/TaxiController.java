@@ -1,4 +1,4 @@
-package com.taxapy.Taxiservice.controller;
+package com.taxappy.taxi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.taxapy.Taxiservice.model.Taxi;
-import com.taxapy.Taxiservice.repository.TaxiRepository;
+import com.taxappy.taxi.model.Taxi;
+import com.taxappy.taxi.repository.TaxiRepository;
+
 
 @RestController
 @RequestMapping("/")

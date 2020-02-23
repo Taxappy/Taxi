@@ -1,4 +1,4 @@
-package com.taxapy.Taxiservice.model;
+package com.taxappy.taxi.model;
 
 
 

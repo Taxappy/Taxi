@@ -1,4 +1,4 @@
-package com.taxapy.Taxiservice;
+package com.taxappy.taxi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient // Enable eureka client.
 @EnableCircuitBreaker // Enable circuit breakers
-public class TaxapyTaxiApplication {
+public class TaxappyTaxiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TaxapyTaxiApplication.class, args);
+		SpringApplication.run(TaxappyTaxiApplication.class, args);
 	}
 
 }
