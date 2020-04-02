@@ -9,9 +9,9 @@ spring:
     name: taxapy-taxi-server
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: integrador123456789
-    url: jdbc:mysql://localhost:3306/taxi?serverTimezone=UTC
-    username: integrador
+    password: roottaxappy
+    url: jdbc:mysql://taxi.czwwvekl5msz.us-east-1.rds.amazonaws.com:3306/taxi?serverTimezone=UTC
+    username: admin
   jpa:
     hibernate:
       ddl-auto: update
