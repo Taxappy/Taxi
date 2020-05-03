@@ -10,7 +10,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: roottaxappy
-    url: jdbc:mysql://taxi.czwwvekl5msz.us-east-1.rds.amazonaws.com:3306/taxi?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/taxi?serverTimezone=UTC
     username: admin
   jpa:
     hibernate:
