@@ -8,6 +8,6 @@ import com.taxappy.taxi.model.Taxi;
 
 
 
-public interface TaxiRepository extends CrudRepository<Taxi, Integer> {
+public interface TaxiRepository extends CrudRepository<Taxi, String> {
 	Taxi findTaxiByPlaca(String placa);
 }

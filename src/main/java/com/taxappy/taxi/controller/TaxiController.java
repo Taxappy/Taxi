@@ -40,8 +40,6 @@ public class TaxiController {
 
 	@DeleteMapping("/{placa}")
 	public void delete(@PathVariable final String placa) {
-		Taxi taxi=new Taxi();
-		taxi.setPlaca(placa);
-		taxiRepository.delete(taxi);
+		taxiRepository.deleteById(placa);
 	}
 }
