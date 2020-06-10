@@ -20,26 +20,28 @@ public class TaxiController {
 	private TaxiRepository taxiRepository;
 	
 	// metodo para obtener todos los taxis
-	@GetMapping("/taxi")
+	@GetMapping("/")
 	public Iterable<Taxi> All() {
 		return taxiRepository.findAll();
 	}
 
 	// metodo para obtener un taxi expecifico
-	@GetMapping("/taxi/{placa}")
+	@GetMapping("/{placa}")
 	public Taxi findByPlaca(@PathVariable final String placa) {
 		return taxiRepository.findTaxiByPlaca(placa);
 
 	}
 
-	@PostMapping("/taxi")
+	@PostMapping("/")
 	public Taxi save(@RequestBody Taxi taxi) {
 		return taxiRepository.save(taxi);
 
 	}
 
-	@DeleteMapping("/taxi")
-	public void delete(@RequestBody Taxi taxi) {
+	@DeleteMapping("/{placa}")
+	public void delete(@PathVariable final String placa) {
+		Taxi taxi=new Taxi();
+		taxi.setPlaca(placa);
 		taxiRepository.delete(taxi);
 	}
 }
